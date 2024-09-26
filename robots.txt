@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gh.codecircle.me/sitemap.xml
