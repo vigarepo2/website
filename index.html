@@ -2,81 +2,232 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Professional Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Disclaimer Page</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #50b3a2, #3a506b);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Container */
+        .container {
+            padding: 100px 20px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #50b3a2;
+        }
+
+        section p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        section ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #50b3a2;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            background: linear-gradient(135deg, #50b3a2, #3a506b);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #3a506b, #50b3a2);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3a506b;
+            color: white;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Cool Section Animations */
+        section:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        section:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        /* Interactive Hover Effect */
+        section:hover {
+            transform: translateY(15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.6rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 80px 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>My Professional Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Disclaimer Page</h1>
+        <p>Important information about our services</p>
     </header>
-    
+
     <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="container">
-                <h2>Welcome to My Website</h2>
-                <p>This is a professional website created using HTML, CSS, and JavaScript.</p>
-            </div>
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to our website! The information provided on this website is for general informational purposes only. All information on the site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.</p>
         </section>
-        
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Information about me goes here.</p>
-            </div>
+
+        <section id="liability">
+            <h2>Limitation of Liability</h2>
+            <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site.</p>
         </section>
-        
-        <!-- Services Section -->
-        <section id="services">
-            <div class="container">
-                <h2>Services</h2>
-                <p>Details about services offered.</p>
-            </div>
+
+        <section id="responsibility">
+            <h2>User Responsibility</h2>
+            <p>You are solely responsible for ensuring that any products, services, or information available through this website meet your specific requirements. Your use of this website and any dispute arising out of such use of the website is subject to the laws of your jurisdiction.</p>
         </section>
-        
-        <!-- Contact Section -->
+
         <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns about this disclaimer, feel free to contact us using the button below:</p>
+            <a href="mailto:info@example.com" class="btn">Contact Us</a>
         </section>
-    </main>
-    
-    <!-- Footer Section -->
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 My Professional Website. All rights reserved.</p>
-        </div>
+        <p>&copy; 2023 Disclaimer Page. All rights reserved.</p>
     </footer>
-    
-    <!-- Link to external JS file -->
-    <script src="script.js"></script>
+
+    <!-- JS for Interactive Animations -->
+    <script>
+        // Animate sections on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if(sectionTop < triggerBottom) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                } else {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(30px)';
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
