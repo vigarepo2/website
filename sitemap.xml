@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://gh.codecircle.me/</loc>
     <lastmod>2024-09-26</lastmod>
     <priority>1.00</priority>
   </url>
   <!-- Add more URLs if you have more pages, for example:
   <url>
-    <loc>https://yourdomain.com/about</loc>
+    <loc>https://gh.codecircle.me/about</loc>
     <lastmod>2024-09-26</lastmod>
     <priority>0.80</priority>
   </url>
