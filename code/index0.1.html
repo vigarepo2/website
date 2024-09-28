@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram Singh | Cinephile</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            background-image: url('https://www.example.com/film-background.jpg'); /* Add a film-related background image */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .cinephile-title {
+            font-size: 1.7em;
+            color: #666;
+            margin-bottom: 1em;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.4em;
+            margin: 15px 0;
+        }
+
+        a {
+            font-size: 1.2em;
+            color: #ff6347; /* A warmer color resembling movie posters */
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vikram Singh</h1>
+    <div class="cinephile-title">
+        <span>Cinephile</span>
+    </div>
+    <p>Fazilka, Punjab, India</p>
+    <p><a href="https://www.instagram.com/wikram.in" target="_blank">Follow on Instagram</a></p>
+
+    <footer>
+        © 2024 Vikram Singh. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript for cinephile theme enhancement
+        document.addEventListener('DOMContentLoaded', () => {
+            const phrases = [
+                "Now Showing...",
+                "Directed by Vikram Singh",
+                "Lights, Camera, Action!"
+            ];
+            let currentPhraseIndex = 0;
+
+            setInterval(() => {
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                console.log(phrases[currentPhraseIndex]);
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
